@@ -14,4 +14,5 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda2-5.3.0-Linux-x86_64.
     echo ". /opt/conda/etc/profile.d/conda.sh" >> ~/.bashrc && \
     echo "conda activate base" >> ~/.bashrc
 
-RUN conda install pytorch torchvision cudatoolkit=10.1 -c pytorch anaconda jupyter_core
+RUN conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+RUN conda install -c anaconda jupyter_core
