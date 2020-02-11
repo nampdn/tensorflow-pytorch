@@ -3,7 +3,7 @@ version: "3"
 
 services:
   dev:
-    build: .
+    image: nampdn/tensorflow-pytorch:latest
     environment:
       - ACCEPT_INTEL_PYTHON_EULA=yes
     ports:
