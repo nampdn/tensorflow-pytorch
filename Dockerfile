@@ -23,7 +23,7 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda2-2019.10-Linux-x86_6
 RUN conda install pytorch torchvision cpuonly -c pytorch
 
 RUN conda create -n pytorch python=3.6 pytorch=1.3
-RUN conda create -n tf python=3.6
+RUN conda create -n tf python=3.6 tensorflow
 
 EXPOSE 8888
 EXPOSE 3000
